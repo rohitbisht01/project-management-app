@@ -24,3 +24,7 @@
 - **Node.js & Express.js** – Scalable backend API
 - **MongoDB** – NoSQL database for flexible data storage
 - **Passport.js** – Authentication and authorization
+
+### Database Schema
+
+![Team Project Management System](./database_schema.png)
