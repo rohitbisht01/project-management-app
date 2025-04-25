@@ -3,6 +3,14 @@ import { asyncHandler } from "../middlewares/asyncHandler.middleware";
 import { registerSchema } from "../validation/auth.validation";
 import { registerUserService } from "../services/auth.service";
 import { HTTPSTATUS } from "../config/http.config";
+import mongoose from "mongoose";
+import UserModel from "../models/user.model";
+import AccountModel from "../models/account.model";
+import WorkspaceModel from "../models/workspace.model";
+import RoleModel from "../models/roles-permission.model";
+import { Roles } from "../enums/role-enum";
+import { NotFoundException } from "../utils/appError";
+import MemberModel from "../models/member.model";
 
 export const registerUserController = asyncHandler(
   async (req: Request, res: Response) => {

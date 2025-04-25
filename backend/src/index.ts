@@ -31,11 +31,11 @@ app.use(
 );
 
 app.use(`${BASE_PATH}/auth`, authRoutes);
-app.use(`${BASE_PATH}/user`);
-app.use(`${BASE_PATH}/workspace`);
-app.use(`${BASE_PATH}/member`);
-app.use(`${BASE_PATH}/project`);
-app.use(`${BASE_PATH}/task`);
+// app.use(`${BASE_PATH}/user`);
+// app.use(`${BASE_PATH}/workspace`);
+// app.use(`${BASE_PATH}/member`);
+// app.use(`${BASE_PATH}/project`);
+// app.use(`${BASE_PATH}/task`);
 
 app.listen(config.PORT, async () => {
   console.log(`server running on port ${config.PORT} in ${config.NODE_ENV}`);
