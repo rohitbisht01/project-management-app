@@ -45,7 +45,7 @@ export const getProjectsInWorkspaceService = async (
     .sort({ createdAt: -1 });
 
   const totalPages = Math.ceil(totalCount / pageSize);
-  return { projects, totalCount, totalPages, ski };
+  return { projects, totalCount, totalPages, skip };
 };
 
 export const getProjectByIdAndWorkspaceIdService = async (
